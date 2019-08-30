@@ -3,7 +3,7 @@
 
 - name: Install Czech locale
   locale_gen:
-    name: "{{item}}"
+    name: "{{ item }}"
     state: present
   with_items:
     - "en_US.UTF-8"
@@ -19,7 +19,6 @@
       - vim
       - htop
       - locate
-    state: latest
 
 - name: create /root/.bashrc if it does not exist
   copy:
