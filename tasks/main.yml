@@ -1,4 +1,4 @@
 ---
-- import_tasks: work-env.yml
+- import_tasks: work_env.yml
   tags:
-    - work-env
+    - work_env
