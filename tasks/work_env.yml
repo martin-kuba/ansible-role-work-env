@@ -33,7 +33,7 @@
       # If this is an xterm set the title to user@host:dir
       case "$TERM" in
       xterm*|rxvt*)
-         PS1="\[\e]0;\u@$(hostname --fqdn) \w\a\]\u@$(hostname --fqdn):\w# "
+         PS1="\[\e]0;\u@$HOSTNAME \w\a\]\u@$HOSTNAME:\w# "
          ;;
       *)
          ;;
